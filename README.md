@@ -6,14 +6,13 @@ Virtual machines can be recovered quickly from zonal outages by moving them acro
 
 ## Sign up for preview
 
-- Customer can sign up by themselves using the below documentation:
-  - Documentation on how to enable the AFEC:
-    - Register - https://learn.microsoft.com/en-us/powershell/module/az.resources/register-azproviderfeature?view=az…
-    - Unregister - https://learn.microsoft.com/en-us/powershell/module/az.resources/unregister-azproviderfeature?view=…
-    - Get - https://learn.microsoft.com/en-us/powershell/module/az.resources/get-azproviderfeature?view=azps-15…
-  - AFECs to be enabled are:
-    - Microsoft.Compute/ForceDeallocateVMPreview
-    - Microsoft.Compute/VMAvailabilityZoneUpdate
+- Customer can sign up by themselves.
+-  1. Open the Cloud shell (PowerShell) from portal. Direct link -> <a href="https://shell.azure.com/" rel="noreferrer noopener" title="https://shell.azure.com/" target="_blank">https://shell.azure.com/</a>
+-  2. Ensure your using the subscription which will be used for testing this feature.
+-  3. Run
+      `Register-AzProviderFeature -FeatureName 'ForceDeallocateVMPreview' -ProviderNamespace 'Microsoft.Compute'`
+-  4. Run
+      `Register-AzProviderFeature -FeatureName 'VMAvailabilityZoneUpdate' -ProviderNamespace 'Microsoft.Compute'`
 
 
 ## Provide feedback 
