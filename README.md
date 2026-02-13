@@ -6,8 +6,14 @@ Virtual machines can be recovered quickly from zonal outages by moving them acro
 
 ## Sign up for preview
 
-Sign-up for the preview via this [form](https://forms.office.com/r/hDYGc0gXwT).
-You will receive an email notification once you are enrolled for the preview.It takes ~4 business days to complete the process.
+- Customer can sign up by themselves using the below documentation:
+  - Documentation on how to enable the AFEC:
+    - Register - https://learn.microsoft.com/en-us/powershell/module/az.resources/register-azproviderfeature?view=az…
+    - Unregister - https://learn.microsoft.com/en-us/powershell/module/az.resources/unregister-azproviderfeature?view=…
+    - Get - https://learn.microsoft.com/en-us/powershell/module/az.resources/get-azproviderfeature?view=azps-15…
+  - AFECs to be enabled are:
+    - Microsoft.Compute/ForceDeallocateVMPreview
+    - Microsoft.Compute/VMAvailabilityZoneUpdate
 
 
 ## Provide feedback 
